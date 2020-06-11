@@ -1,0 +1,19 @@
+#main{
+  display:flex;
+flex-direction: column;
+align-items: center;
+color:beige;
+background:black}
+
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h5{
+    color: #0044A6;
+    text-align: center;
+  }
+  li{
+    display: flex;
+  }

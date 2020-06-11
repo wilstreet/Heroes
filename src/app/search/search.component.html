@@ -1,0 +1,15 @@
+
+<div class="form-group">
+  <input id="search-box"  #searchBox class="enter" placeholder="Buscar personaje" type="search" id="name"  (input)="search(searchBox.name)" required>
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async" >
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+

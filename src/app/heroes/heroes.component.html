@@ -1,0 +1,23 @@
+
+<div class="main">
+
+
+
+
+
+  <app-search></app-search>
+<div class="card">
+ <ul class="lista" *ngFor="let hero of heroes">
+
+    <li class="list-group-item"><img src="{{hero.images.sm}}" alt="" routerLink="/details"></li>
+    <li class="list-group-item"><h5>{{hero.name | uppercase}}</h5></li>
+    <li class="list-group-item">Intelligence: {{hero.powerstats.intelligence}}</li>
+    <li class="list-group-item">Speed: {{hero.powerstats.speed}}</li>
+    <li class="list-group-item">Power: {{hero.powerstats.power}}</li>
+    <li class="list-group-item">Gender: {{hero.appearance.gender}}</li>
+    <li class="list-group-item">Race: {{hero.appearance.race}}</li>
+  </ul>
+</div>
+
+
+</div>
